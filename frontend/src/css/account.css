@@ -1,0 +1,141 @@
+#main-account {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#main-account .rowAccount {
+    display: flex;
+    align-items: center;
+}
+
+#main-account input::-webkit-outer-spin-button,
+#main-account input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+#main-account input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#profile_picture_container {
+    align-items: center !important;
+}
+
+.profile-picture-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.profile-picture {
+    font-size: 3rem;
+}
+
+.btn-account {
+    height: 100%;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    margin-right: 1rem;
+    background: white;
+    border: 1px solid rgba(70, 29, 124, 0.2);
+    border-radius: 1.5rem;
+    font-weight: 1000;
+    box-shadow: inset 0em 0em var(--main-color);
+    transition: all .3s;
+}
+
+.btn-account:hover {
+    box-shadow: inset 0em 3em var(--main-color);
+    color: white;
+}
+
+#profile_info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.acc-input {
+    width: 100%;
+}
+
+.acc-label-container {
+    justify-content: space-between;
+}
+
+.acc-label {
+    font-weight: 700;
+}
+
+.acc-label-desc {
+    color: gray
+}
+
+.acc-text-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all .3s;
+}
+
+.acc-text-input:focus {
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(70, 29, 124, 0.5);
+}
+
+.linked_account_tab {
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linked_account_tab .icon_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.linked_account_tab .icon_container p {
+    margin-bottom: 0px !important;
+}
+
+#delete_account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
